@@ -53,10 +53,10 @@ namespace task5
         }
         static void Main(string[] args)
         {
-            //areaCalculation( 10,shapes.circle);
-            //areaCalculation(10,  shapes.square);
-            //areaCalculation(10, shapes.rectangle, 11);
-           
+            areaCalculation( 10,shapes.circle);
+            areaCalculation(10,  shapes.square);
+            areaCalculation(10, shapes.rectangle, 11);
+
 
             iteration(11,21);
             Console.ReadKey();

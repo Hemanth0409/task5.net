@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>task5.Program</StartupObject>
+    <StartupObject>task5.preprocessor</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
