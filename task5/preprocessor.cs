@@ -1,5 +1,6 @@
 ﻿#define bubblesort
 #define quicksort
+#undef quicksort
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -14,7 +15,9 @@ namespace task5
         #region sort
 
 #if bubblesort
-#warning this is bubble sort
+//#warning this is bubble sort
+//#error this is bubbleSort
+#line 1 "preproessor.cs"
         public static void bubblesort()
         {
             Console.Write("BubbleSort:");
@@ -52,11 +55,10 @@ namespace task5
                 Console.Write(i);
                 Console.WriteLine("\t");
             }
-           
+
         }
-#elif quicksort
-#error this is quicksort
-#line 1 "preproessor.cs"
+//#elif quicksort
+
 
         static public int Partition(int[] arr, int left, int right)
         {
