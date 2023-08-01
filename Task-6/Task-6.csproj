@@ -34,7 +34,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Task_6.Product_insertion</StartupObject>
+    <StartupObject>Task_6.HR.main_class</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
     <NoWin32Manifest>true</NoWin32Manifest>
@@ -55,6 +55,7 @@
     <Compile Include="Lambda.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="virtual.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
