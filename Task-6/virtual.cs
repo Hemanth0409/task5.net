@@ -33,7 +33,7 @@ namespace Task_6
         {
             static void Main(string[] args)
             {
-                HR employee = new HR() { salary = 45000, Bonus = 3000 };
+                HR employee = new HR() { salary = 100000, Bonus = 10000 };
                 Employee employee1 = employee;
 
                 employee1.Details();
