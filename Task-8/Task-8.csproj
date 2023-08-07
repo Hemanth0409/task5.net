@@ -34,7 +34,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Task_8.read_writeFile</StartupObject>
+    <StartupObject>Task_8.FileProperties</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CsvHelper, Version=30.0.0.0, Culture=neutral, PublicKeyToken=8c4959082be5c823, processorArchitecture=MSIL">
@@ -72,7 +72,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CsvWorking.cs" />
     <Compile Include="ExcelDemo.cs" />
+    <Compile Include="FileDeletion.cs" />
+    <Compile Include="FileProperties.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="read&amp;writeFile.cs" />

@@ -8,15 +8,22 @@ namespace task9
 {
     public class FuncDelegate1
     {
-        public static int Multiply(int x)
+        public static int Multiply(int x,int y)
         {
-            return x;
+            return x*y;
         }
         static void Main(string[] args)
         {
-            Func<int, int> multiply1 = Multiply;
-           
-           
+            int result;
+            Func<int, int,int > multiply1 = Multiply;
+           Console.WriteLine("Enter a number:");
+
+int x=Convert.ToInt32(Console.ReadLine());
+            for(int y=1; y<=10; y++)
+            {
+                result = multiply1(x,y);
+                Console.WriteLine($"{x}*{y}={result}");
+            }
         }
     }
 }
