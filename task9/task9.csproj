@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>task9.FuncDelegate1</StartupObject>
+    <StartupObject>task9.TodoList</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActionDelegate.cs" />
     <Compile Include="coupon.cs" />
     <Compile Include="FuncDelegate.cs" />
     <Compile Include="Program.cs" />

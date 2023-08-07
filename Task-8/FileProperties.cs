@@ -21,9 +21,9 @@ namespace Task_8
             Console.WriteLine("myFile total Size: " + oFileInfo.Length.ToString());
             Console.WriteLine("myFile filepath: " + oFileInfo.DirectoryName);
             Console.WriteLine("My File's Full Name: \"" + oFileInfo.FullName + "\"");
-            Console.WriteLine(oFileInfo.Directory);
-            Console.WriteLine(oFileInfo.LastAccessTime);
-            Console.WriteLine(oFileInfo.LastWriteTime);
+            Console.WriteLine("My File's Directory: \"" + oFileInfo.Directory);
+            Console.WriteLine("My File's LastAccessTime: \"" + oFileInfo.LastAccessTime);
+            Console.WriteLine("My File's LastWriteTime: \"" + oFileInfo.LastWriteTime);
         }
     }
 }
