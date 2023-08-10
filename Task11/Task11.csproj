@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{ABDFC0A5-9CFF-4AA2-8DD4-6A179018889A}</ProjectGuid>
+    <ProjectGuid>{CD6AC3A5-6EFE-4503-9C51-3876E1E3ABF7}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Task_10</RootNamespace>
-    <AssemblyName>Task-10</AssemblyName>
+    <RootNamespace>Task11</RootNamespace>
+    <AssemblyName>Task11</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Task_10.MultiThreads</StartupObject>
+    <StartupObject>Task11.Reflection</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,17 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BonusCalEvent.cs" />
-    <Compile Include="Debugging.cs" />
-    <Compile Include="debugging2.cs" />
-    <Compile Include="debugging3.cs" />
-    <Compile Include="Debugging4.cs" />
-    <Compile Include="Debugging5.cs" />
-    <Compile Include="Debugging6.cs" />
-    <Compile Include="MultiThreading.cs" />
+    <Compile Include="CustomAttribute.cs" />
+    <Compile Include="GenericIndexer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RegexValidation.cs" />
+    <Compile Include="Reflection.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

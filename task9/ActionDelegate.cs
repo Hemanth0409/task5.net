@@ -11,7 +11,7 @@ namespace task9
     public class TodoList
     {
         List<string> todoMsg = new List<string>();
-        public delegate void myAdd(string msg);
+
 
         public void  Add(string Msg)
         {
@@ -23,9 +23,11 @@ namespace task9
             todoMsg.Remove(Msg);
             Console.WriteLine("Removed");
         }
+
         public void Clear()
         {
             todoMsg.Clear();
+            Console.WriteLine("Cleared");
         }
 
         static void Main(string[] args)
@@ -34,20 +36,24 @@ namespace task9
             Console.WriteLine("Enter the task:");
             string x= Console.ReadLine();
 
-            Console.WriteLine("Enter 1/2");
+            Console.WriteLine("Enter 1 to add the task/2 to remove the task /3 to clear the task");
             int a = Convert.ToInt32(Console.ReadLine());
 
-            myAdd todoAdd = t.Add; 
-            
-           myAdd todoRemove = t.Remove;
+            Action<string> adding= t.Add;
+            Action<string> removeing= t.Remove;
+          Action clearing= t.Clear;
 
             if (a == 1)
             {
-                todoAdd(x);
+                adding(x);
+            }
+            else if(a==2)
+            {
+                removeing(x);
             }
             else
             {
-                todoRemove(x);
+                clearing();
             }
             Console.ReadLine();
         }
