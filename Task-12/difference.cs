@@ -1,47 +1,55 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Task_12
 {
-    public class MyClass
+    class Variables
     {
-        public readonly int readonlyvar1 = 10, readonlyvar2;
-        public const int constvar = 20;
-        public static int staticvar = 0;
-        public MyClass(int i)
-        {
-            readonlyvar2 = i; // valid
-                              //z = i; //compile-time error
-            staticvar = i; // valid
-        }
+        public readonly int a = 10; public readonly int b;
+        public const int c = 27;
+        public static int d;
+        public int e;
 
-        public void ChangeVal(int val)
+        public Variables(int i)
         {
-            //x = val;
-            //z = i; //compile-time error
-            staticvar = val; // valid
+            a = i;
+            b = i;
+            d = i;
+            e = i;
         }
-
+        public void ChangeValue(int val1)
+        {
+            d = val1;
+            e = val1;
+        }
         public void Display()
         {
-            Console.WriteLine(staticvar);
-            Console.WriteLine(readonlyvar1);
-            Console.WriteLine(constvar);
+            Console.WriteLine($"Value of First readonly variable: {a}");
+            Console.WriteLine($"Value of Second readonly variable value of b: {b}");
+            Console.WriteLine($"Value of constant variable: {c}");
+            Console.WriteLine($"Value of static variable: {d}");
+            Console.WriteLine($"Value of instance variable: {e}");
         }
     }
-    internal class difference
+    internal class Difference 
     {
-        public static void Main()
+        static void Main(string[] args)
         {
-            MyClass mc = new MyClass(50);
-            mc.ChangeVal(45);
-            mc.Display();
-
-            Console.WriteLine("MyClass.constvar = {0}", MyClass.constvar);
-            Console.WriteLine("MyClass.staticvar = {0}", MyClass.staticvar);
+            Variables v = new Variables(104);
+            Variables v1 = new Variables(39);
+            //v1.ChangeValue(97);
+            Console.WriteLine("Displaying Values\n");
+            v.Display();
+            Console.WriteLine("\n****************\n");
+            Console.WriteLine("Displaying Values after changes\n");
+            Console.WriteLine($"Variables.static value: {Variables.d}");
+            Console.WriteLine($"Variables.instance value: {v.e}");
+            Console.WriteLine($"Variables.constant value: {Variables.c}");
+            Console.ReadLine();
         }
     }
 }
