@@ -10,7 +10,7 @@ namespace Task_12
     {
 
         static int sum;
-        static int mul=1;
+        static int mul = 1;
         static async Task<int> MethodSum(int n)
         {
             await Task.Delay(1000);
@@ -38,9 +38,9 @@ namespace Task_12
             Console.Write("Number :");
             int x = Convert.ToInt32(Console.ReadLine());
             int s = await MethodSum(x);
-            Console.WriteLine(s);
             int p = await MethodMultiply(x);
             Console.WriteLine(p);
+            Console.WriteLine(s);
             Console.ReadLine();
         }
     }
